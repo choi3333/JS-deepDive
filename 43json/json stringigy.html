@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   const todos = [
+       {id:1, content: 'html', completed:false},
+       {id:2, content: 'css', completed: true},
+       {id:3, content: 'javascript', completed: false}
+   ];
+
+   const json = JSON.stringify(todos,null,2);
+   console.log(typeof json, json);
+   
+    </script>
+</body>
+</html>

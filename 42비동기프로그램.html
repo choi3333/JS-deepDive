@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const foo = () => {};
+        // const bar = () => {};
+
+        // foo();
+        // bar();
+
+        // 자바스크립트 엔진은 단 하나의 실행 컨텍스트 스텍을 갖는다.
+        //싱글 스레드 방식으로 동작한다.
+        // function sleep(func, delay){
+        //     const delayUntill = Date.npw() + delay;
+
+        //     while(Date.now() < delayUntill);
+
+        //     func();
+        // }
+
+        //타이머 함수인 setTiomeOut과 SetInterval, http요청. 이벤트 핸들러는
+        //비동기 처리방식으로 작동
+
+        //동시성 지원하는 것이 바로 이벤트 루프Event Loop
+        // 콜스텍: 실행 컨텍스트 스택이 바로 콜 스택이다.
+        //힙: 객체가 저장되는 메모리 공간이다.
+
+        //테스크 큐: setTimeout이나 SetInerval과 같은 비동기 함수의 콜백 함수 또는
+        // 이벤트 핸들러가 일시적으로 보관되는 영역이다. 
+
+        //이벤트루프: 이벤트 루프는 콜 스텍에 현재 실행중인 실행 컨텍스트가 있는지,
+        //그리고 태스크 큐에 대기중인 함수가 있는지 반복해서 확인된다.
+        // function foo(){
+        //     console.log('foo')
+        // }
+        // function bar(){
+        //     console.log('bar')
+        // }
+        // setTimeout(foo,0)
+        // bar()
+
+        // bar foo 순서로 실행된다.
+        // 브라우저는 멀티 뜨레드 엔진이다.
+
+    </script>
+</body>
+</html>
